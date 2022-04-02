@@ -74,7 +74,7 @@ h1 {
   margin-left: 0;
   margin-top: 25px;
   align-items: center;
-  background-color: #444444;
+  background-color: #171717;
   font-size: 24px;
   color: #e3e3e3;
 }
@@ -89,11 +89,11 @@ h1 {
   color: #e3e3e3;
   font-size: 20px;
   border-radius: 17px;
-  padding: 19px;
+  padding: 25px;
   display: inline-block;
   text-shadow: 0.5px 0.5px #da0037;
 }
-.requirement {
+.instructions {
   font-weight: 600px;
   font-style: italic;
   color: #da0037;
@@ -104,6 +104,7 @@ h1 {
   color: #e3e3e3;
   background-color: #da0037;
   border-radius: 30px;
+  margin-top: 60px;
   font-size: 32px;
   font-weight: 400;
   padding: 10px 40px;
