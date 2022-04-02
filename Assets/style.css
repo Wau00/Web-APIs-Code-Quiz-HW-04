@@ -1,13 +1,19 @@
 
-*{
-    background-color: #121212;
+*{ 
     font-family:Arial, Helvetica, sans-serif;
     word-spacing: 6px;
+
 }
 
 
 /* Header */
 
+body{
+    background-color: #171717;
+    justify-content: center;
+    align-items: center;
+    
+}
 header{
     margin-top: 8%;
     font-weight: 600px;
@@ -19,11 +25,11 @@ ul li{
 ul li a{
     text-decoration: none;
     color: #e3e3e3;
-    text-shadow:1px 1px #bb86fc;
-    background-color:#1e1e1e;
+    text-shadow:1px 1px #DA0037;
+    background-color:#444444;
     border-radius: 25px;
-    padding: 10px
-    
+    padding: 10px;
+    font-size: 18px;
 
     
 }
@@ -34,23 +40,56 @@ ul li a{
    
 }
 .btnTimer{
-    color:#bb86fc; 
-    background-color: #1e1e1e;
+    color:#DA0037; 
+    background-color: #444444;
 }
 
 h1{
     text-align: center;
-    color: #bb86fc;
-    text-shadow:1px 1px #e3e3e3;
-    background-color: #1e1e1e;
+    color: #e3e3e3;
+    text-shadow:2px 2px #DA0037;
+    background-color: #444444;
     border-radius: 25px;
-    border-color: #1e1e1e;
-    box-shadow: 0 0 10px 2px;
+    border-color: #444444;
+    box-shadow: 2px 2px 5px #DA0037;
 }
 
 /* Box container */
 
 .boxCont{
-    text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+border: 1px solid #171717;
+background-color:#444444;
+text-align: center;
+height: 400px;
+box-shadow: 4px 4px 5px #DA0037;
+}
+
+.questions-box{
+    color: #e3e3e3;
+    text-shadow:2px 2px #DA0037;
+    font-size: 32px;
+   
+
+}
+
+.answerBtn{
+    display: block;
+    padding: 10px;
+    margin-left:0;
+    margin-top: 25px;
+    align-items:center;
+    background-color:#444444;
+    font-size: 24px;
+    color:#e3e3e3;
+    
+}
+
+.commandsBtn{
+    display: inline-block;
+    padding: 10px;
     
 }
