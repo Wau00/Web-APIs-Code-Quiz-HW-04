@@ -6,6 +6,7 @@
 }
 
 
+/* Header */
 
 header{
     margin-top: 8%;
@@ -44,4 +45,12 @@ h1{
     background-color: #1e1e1e;
     border-radius: 25px;
     border-color: #1e1e1e;
+    box-shadow: 0 0 10px 2px;
+}
+
+/* Box container */
+
+.boxCont{
+    text-align: center;
+    
 }
