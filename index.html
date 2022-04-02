@@ -1,58 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./Assets/style.css"/>
-        <title>Code Quiz</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#">Leaderboards</a></li>
-                    <li class="right"><a>Timer : <span class=btnTimer>60</span> s </a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/style.css" />
+    <title>Code Quiz</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Leaderboards</a></li>
+          <li class="right">
+            <a>Timer : <span class="btnTimer">60</span> s </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1>The Ultimate Code Quiz</h1>
+    <main>
+      <div class="boxCont">
+        <div class="questions-box">Questions</div>
+        <div class="answers-box" id="container">
+          <button class="answerBtn">Answer 1</button>
+          <button class="answerBtn">Answer 2</button>
+          <button class="answerBtn">Answer 3</button>
+          <button class="answerBtn">Answer 4</button>
+        </div>
 
-                </ul>
-            </nav>
-        </header>
-        <h1> The Ultimate Code Quiz</h1>
-        <main>
-        <div class="boxCont">
-            <div class="questions-box"> Questions</div>
-            <div class="answers-box"> 
-                <button class="answerBtn"> Answer 1 </button> 
-                <button class="answerBtn"> Answer 2 </button>
-                <button class="answerBtn"> Answer 3 </button>
-                <button class="answerBtn"> Answer 4 </button>        
-            </div>
-        </div>  
-        <div class="commandsBtn">  
-             <button class="startBtn">Start</button>
-             <button class="nextBtn">Next</button>
-        </div> 
-        </main>
+        <div class="commandsBtn">
+          <button class="startBtn">Start</button>
+          <div class="hide"> Try to answer the following code-related questions within the time limit. Keep in mind
+              that incorrect answers will penalize your score time by <span class= requirement>TEN SECONDS!</span>
+          </div>
+      </div>
+    </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script src="./Assets/script.js"></script>  
-</body>
+    <script src="./Assets/script.js"></script>
+  </body>
 </html>
