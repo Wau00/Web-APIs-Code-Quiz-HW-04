@@ -7,7 +7,7 @@ var questions = document.getElementById("questionsBox");
 var buttonAnswer = document.getElementById("btn");
 var btnSelector = document.getElementsByClassName("answerBtn");
 
-var answerOne = document.getElementById("btn1");
+
 
 
 var dataInfo = [
@@ -83,3 +83,19 @@ function correctAnswer(){
     document.getElementById("secondQuestion").style.display = "block";
 }
     
+function secondcorrectAnswer (){
+document.getElementById("secondQuestion").style.display = "none";
+document.getElementById("thirdQuestion").style.display = "block";
+
+}
+
+function thirdcorrectAnswer (){
+  document.getElementById("thirdQuestion").style.display = "none";
+  document.getElementById("fourthQuestion").style.display = "block";
+}
+
+function fourthcorrectAnswer (){
+  document.getElementById("fourthQuestion").style.display = "none";
+  document.getElementById("fifthQuestion").style.display = "block";
+}
+
