@@ -2,6 +2,14 @@ var btnTimer;
 var timer;
 var finalscore = 0;
 var questionNumber = 0;
+
+var questions = document.getElementById("questionsBox");
+var buttonAnswer = document.getElementById("btn");
+var btnSelector = document.getElementsByClassName("answerBtn");
+
+var answerOne = document.getElementById("btn1");
+
+
 var dataInfo = [
   {
     promptQuest:
@@ -51,9 +59,8 @@ start.addEventListener("click", startGame);
 
 function startGame() {
   btnTimer = 60;
-  document.getElementById("container").style.display = "block";
+  document.getElementById("firstQuestion").style.display = "block";
   startTimer();
-  questionsTrivia();
 }
 function startTimer() {
   timer = setInterval(function () {
@@ -70,13 +77,9 @@ function startTimer() {
   }, 1000);
 }
 
-function questionsTrivia() {
-  let questions = document.getElementById("questionsBox");
-  let buttonAnswer = document.getElementById("btn");
-  if (questionNumber < dataInfo.length) {
-    questions.innerHTML = dataInfo[questionNumber].promptQuest;
-    buttonAnswer.textContent = "";
-  }
 
-  for (let i = 0; i < dataInfo[questionNumber].choices.length; i++) {}
+function correctAnswer(){
+    document.getElementById("firstQuestion").style.display = "none";
+    document.getElementById("secondQuestion").style.display = "block";
 }
+    

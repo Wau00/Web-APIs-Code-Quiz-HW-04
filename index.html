@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Assets/style.css" />
+    <link rel="stylesheet" href="./Assets/style.css"/>
     <title>Code Quiz</title>
   </head>
   <body>
@@ -21,14 +21,24 @@
     <h1>The Ultimate Code Quiz</h1>
     <main>
       <div class="boxCont">
-        <div class="questions-box" id="questionsBox">Questions</div>
-        <div class="answers-box" id="container">
-          <button class="answerBtn" id="btn">Answer 1</button>
-          <button class="answerBtn" id="btn">Answer 2</button>
-          <button class="answerBtn" id="btn">Answer 3</button>
-          <button class="answerBtn" id="btn">Answer 4</button>
+          
+        <div class="answers-box" id="firstQuestion">
+          <div class="questions-box" id="questionsBox">"Which of the following variable is everywhere in your JavaScript code?"</div>
+        <button class="answerBtn" id="btn1" onclick="correctAnswer()">global variable</button>
+          <button class="answerBtn" id="btn2">local variable</button>
+          <button class="answerBtn" id="btn3">Both of the above</button>
+          <button class="answerBtn" id="btn4">None of the above</button>
         </div>
 
+          <div class="answers-box" id="secondQuestion">
+            <div class="questions-box" id="questionsBox">"How to write an if statement in JavaScript?""</div>
+          <button class="answerBtn" id="btn5" >"if i === 4"</button>
+            <button class="answerBtn" id="btn6" onclick="secondcorrectAnswer()">if (i === 5)</button>
+            <button class="answerBtn" id="btn7">else (if === 5)</button>
+            <button class="answerBtn" id="btn8">if [i === 5]</button>
+          </div>
+
+  
         <div class="commandsBtn">
           <button class="startBtn" id="startHide"> Start </button>
           <div class="hide"> Try to answer the following code-related questions within the time limit. Keep in mind

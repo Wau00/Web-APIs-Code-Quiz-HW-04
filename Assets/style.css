@@ -118,6 +118,8 @@ h1 {
   transition: transform 450ms;
 }
 
+
+
 .startBtn:hover {
   transform: translateY(-3px);
   opacity: 1;
@@ -128,6 +130,10 @@ h1 {
 .hide {
   display: none;
 }
-#container {
+#firstQuestion {
+  display: none;
+}
+
+#secondQuestion {
   display: none;
 }
