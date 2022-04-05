@@ -1,9 +1,10 @@
 var btnTimer;
 var timer;
-
-var data = [
+var finalscore = 0;
+var questionNumber = 0;
+var dataInfo = [
   {
-    question:
+    promptQuest:
       "Which of the following variable is everywhere in your JavaScript code?",
     choices: [
       "global variable",
@@ -14,17 +15,17 @@ var data = [
     answer: "global variable",
   },
   {
-    question: "How to write an if statment in JavaScript?",
+    promptQuest: "How to write an if statment in JavaScript?",
     choices: ["if i === 4", "if (i === 5)", "if [i === 5]", "else (if === 5)"],
     answer: "if (i === 5)",
   },
   {
-    question: "Inside which HTML element do we put the JavaScript?",
+    promptQuest: "Inside which HTML element do we put the JavaScript?",
     choices: ["<button>", "<div>", "<script>", "<html>"],
     answer: "<script>",
   },
   {
-    question: "How do you write 'Hello World' in alert box?",
+    promptQuest: "How do you write 'Hello World' in alert box?",
     choices: [
       "click('Hello World')",
       "console.log('Hello World')",
@@ -34,12 +35,12 @@ var data = [
     answer: "alert('Hello World')",
   },
   {
-    question: "What is negative Infinity?",
+    promptQuest: "What is negative Infinity?",
     choices: ["A number", "A tag", "A function", "All of the above"],
     answer: "A number",
   },
   {
-    question: "When was JavaScript created?",
+    promptQuest: "When was JavaScript created?",
     choices: ["1981", "1999", "2006", "1995"],
     answer: "1995",
   },
@@ -52,6 +53,7 @@ function startGame() {
   btnTimer = 60;
   document.getElementById("container").style.display = "block";
   startTimer();
+  questionsTrivia();
 }
 function startTimer() {
   timer = setInterval(function () {
@@ -68,4 +70,13 @@ function startTimer() {
   }, 1000);
 }
 
-function questionsTrivia() {}
+function questionsTrivia() {
+  let questions = document.getElementById("questionsBox");
+  let buttonAnswer = document.getElementById("btn");
+  if (questionNumber < dataInfo.length) {
+    questions.innerHTML = dataInfo[questionNumber].promptQuest;
+    buttonAnswer.textContent = "";
+  }
+
+  for (let i = 0; i < dataInfo[questionNumber].choices.length; i++) {}
+}
