@@ -32,7 +32,7 @@
 
           <div class="answers-box" id="secondQuestion">
             <div class="questions-box" id="questionsBox">How to write an if statement in JavaScript?</div>
-          <button class="answerBtn" id="btn5" >"if i === 4"</button>
+          <button class="answerBtn" id="btn5" >if i === 4</button>
             <button class="answerBtn" id="btn6" onclick="secondcorrectAnswer()">if (i === 5)</button>
             <button class="answerBtn" id="btn7">else (if === 5)</button>
             <button class="answerBtn" id="btn8">if [i === 5]</button>
@@ -62,7 +62,21 @@
             <button class="answerBtn" id="btn12" onclick="fifthcorrectAnswer()">1995</button>
           </div>
 
-  
+          <div class="scores-box" id="finalResult"> 
+            
+            <h3>Thanks for Playing!</h3>
+            <p> Your Final Score is: <span id="finalscore">0</span> out of 100!</p>
+            <p> Congrats!</p>
+            <form class="submit-box" id="finalInitials"> 
+                <label for="inputInitials">Enter your Initials</label>
+                <input type="text" class="finalscore" id="guestInitials" value = "" >
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+
+
+
+          </div>
         <div class="commandsBtn">
           <button class="startBtn" id="startHide"> Start </button>
           <div class="hide"> Try to answer the following code-related questions within the time limit. Keep in mind

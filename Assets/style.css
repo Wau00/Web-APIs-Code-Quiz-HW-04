@@ -118,7 +118,7 @@ h1 {
   transition: transform 450ms;
 }
 
-
+/* Start Function and Trivia Display */
 
 .startBtn:hover {
   transform: translateY(-3px);
@@ -148,4 +148,26 @@ h1 {
 
 #fifthQuestion{
   display: none;
+}
+
+/*Final Scores Box  */
+
+.scores-box{
+color: #e3e3e3;
+  display: block;
+  margin-top: 10%;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 6px solid #171717;
+  border-radius: 30px;
+  background-color: #da0037;
+  text-align: center;
+  height: 200px;
+  box-shadow: 4px 4px 5px #da0037;
+}
+
+#finalResult{
+display: none;
 }
