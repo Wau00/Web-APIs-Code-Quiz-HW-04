@@ -25,57 +25,53 @@
         <div class="answers-box" id="firstQuestion">
           <div class="questions-box" id="questionsBox">Which of the following variable is everywhere in your JavaScript code?</div>
         <button class="answerBtn" id="btn1" onclick="correctAnswer()">global variable</button>
-          <button class="answerBtn" id="btn2">local variable</button>
-          <button class="answerBtn" id="btn3">Both of the above</button>
-          <button class="answerBtn" id="btn4">None of the above</button>
+          <button class="answerBtn" id="wrongbutton" onclick="wrongAnswer()">local variable</button>
+          <button class="answerBtn" id="wrongbutton" onclick="wrongAnswer()">Both of the above</button>
+          <button class="answerBtn" id="wrongbutton" onclick="wrongAnswer()">None of the above</button>
         </div>
 
           <div class="answers-box" id="secondQuestion">
             <div class="questions-box" id="questionsBox">How to write an if statement in JavaScript?</div>
-          <button class="answerBtn" id="btn5" >if i === 4</button>
+          <button class="answerBtn" id="wrongbutton" onclick="wrongAnswer()">if i === 4</button>
             <button class="answerBtn" id="btn6" onclick="secondcorrectAnswer()">if (i === 5)</button>
-            <button class="answerBtn" id="btn7">else (if === 5)</button>
-            <button class="answerBtn" id="btn8">if [i === 5]</button>
+            <button class="answerBtn" id="wrongbutton" onclick="wrongAnswer()">else (if === 5)</button>
+            <button class="answerBtn" id="wrongbutton" onclick="wrongAnswer()">if [i === 5]</button>
           </div>
 
           <div class="answers-box" id="thirdQuestion">
             <div class="questions-box" id="questionsBox">Inside which HTML element do we put the JavaScript?</div>
-            <button class="answerBtn" id="btn11">"Button"</button>
-            <button class="answerBtn" id="btn10">"Div"</button>
+            <button class="answerBtn" id="wrongbutton" onclick="wrongAnswer()">"Button"</button>
+            <button class="answerBtn" id="wrongbutton" onclick="wrongAnswer()">"Div"</button>
             <button class="answerBtn" id="btn11" onclick="thirdcorrectAnswer()">"Script"</button>
-            <button class="answerBtn" id="btn12">"Html"</button>
+            <button class="answerBtn" id="wrongbutton" onclick="wrongAnswer()">"Html"</button>
           </div>
 
           <div class="answers-box" id="fourthQuestion">
             <div class="questions-box" id="questionsBox">How do you write 'Hello World' in alert box?</div>
-            <button class="answerBtn" id="btn11">click ('Hello World');</button>
-            <button class="answerBtn" id="btn10">console.log ('Hello World');</button>
+            <button class="answerBtn" id="wrongbutton" onclick="wrongAnswer()">click ('Hello World');</button>
+            <button class="answerBtn" id="wrongbutton" onclick="wrongAnswer()">console.log ('Hello World');</button>
             <button class="answerBtn" id="btn11" onclick="fourthcorrectAnswer()">alert ('Hello World');</button>
-            <button class="answerBtn" id="btn12">None of the above</button>
+            <button class="answerBtn" id="wrongbutton" onclick="wrongAnswer()">None of the above</button>
           </div>
           
           <div class="answers-box" id="fifthQuestion">
             <div class="questions-box" id="questionsBox">When was JavaScript created?</div>
-            <button class="answerBtn" id="btn11">1987</button>
-            <button class="answerBtn" id="btn10">1999</button>
-            <button class="answerBtn" id="btn11" >2006</button>
+            <button class="answerBtn" id="wrongbutton" onclick="wrongAnswer()">1987</button>
+            <button class="answerBtn" id="wrongbutton" onclick="wrongAnswer()">1999</button>
+            <button class="answerBtn" id="wrongbutton"onclick="wrongAnswer()" >2006</button>
             <button class="answerBtn" id="btn12" onclick="fifthcorrectAnswer()">1995</button>
           </div>
 
           <div class="scores-box" id="finalResult"> 
-            
-            <h3>Thanks for Playing!</h3>
-            <p> Your Final Score is: <span id="finalscore">0</span> out of 100!</p>
+             <h3>Thanks for Playing!</h3>
+            <p> Your Final Score is: <span id="finalscore">100</span> out of 100!</p>
             <p> Congrats!</p>
-            <form class="submit-box" id="finalInitials"> 
+            <form class="submit-box" id="finalInitials" action=""> 
                 <label for="inputInitials">Enter your Initials</label>
                 <input type="text" class="finalscore" id="guestInitials" value = "" >
                 <br><br>
                 <input type="submit" value="Submit">
             </form>
-
-
-
           </div>
         <div class="commandsBtn">
           <button class="startBtn" id="startHide"> Start </button>
@@ -84,6 +80,10 @@
           </div>
       </div>
     </main>
+
+    <footer>
+      <h4 id="scoreAlert">Correct! +25 pts</h4>
+    </footer>
 
     <script src="./Assets/script.js"></script>
   </body>

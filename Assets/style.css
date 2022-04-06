@@ -171,3 +171,15 @@ color: #e3e3e3;
 #finalResult{
 display: none;
 }
+
+/* Footer Score */
+
+h4{
+  font-size: 48px;
+  text-align: center;
+  color: rgb(77, 208, 62);
+  text-shadow: 1px 1px #ffff;
+}
+h4{
+  display: none;
+}

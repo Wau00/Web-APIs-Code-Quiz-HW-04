@@ -1,14 +1,15 @@
 var btnTimer;
 var timer;
-var finalscore = 0;
-var questionNumber = 0;
+var finalscore;
 
-var questions = document.getElementById("questionsBox");
-var buttonAnswer = document.getElementById("btn");
-var btnSelector = document.getElementsByClassName("answerBtn");
+let scoreAlert = document.getElementById("scoreAlert")
 
-
-
+let questionOne = document.getElementById("firstQuestion");
+let questionTwo = document.getElementById("secondQuestion");
+let questionThree = document.getElementById("thirdQuestion");
+let questionFour = document.getElementById("fourthQuestion");
+let questionFive = document.getElementById("fifthQuestion");
+let enterInitials = document.getElementById("finalResult");
 
 
 const start = document.getElementById("startHide");
@@ -18,10 +19,12 @@ function startGame() {
   btnTimer = 60;
   document.getElementById("firstQuestion").style.display = "block";
   startTimer();
-}
+  }
+
+
 function startTimer() {
   timer = setInterval(function () {
-
+    start.style.display= "none";
     btnTimer--;
     document.querySelector(".temporizer").textContent = btnTimer;
     if (btnTimer >= 0) {
@@ -37,27 +40,38 @@ function startTimer() {
 
 
 function correctAnswer(){
-    document.getElementById("firstQuestion").style.display = "none";
-    document.getElementById("secondQuestion").style.display = "block";
+    questionOne.style.display = "none";
+    questionTwo.style.display = "block";
+    scoreAlert.style.display = "block";
 }
-    
+
 function secondcorrectAnswer (){
-document.getElementById("secondQuestion").style.display = "none";
-document.getElementById("thirdQuestion").style.display = "block";
+questionTwo.style.display = "none";
+questionThree.style.display = "block";
+scoreAlert.style.display = "block";
 
 }
 
 function thirdcorrectAnswer (){
-  document.getElementById("thirdQuestion").style.display = "none";
-  document.getElementById("fourthQuestion").style.display = "block";
+  questionThree.style.display = "none";
+  questionFour.style.display = "block";
+  scoreAlert.style.display = "block";
 }
 
 function fourthcorrectAnswer (){
-  document.getElementById("fourthQuestion").style.display = "none";
-  document.getElementById("fifthQuestion").style.display = "block";
+  questionFour.style.display = "none";
+  questionFive.style.display = "block";
+  scoreAlert.style.display = "block";
 }
 
 function fifthcorrectAnswer (){
-  document.getElementById("fifthQuestion").style.display = "none";
-  document.getElementById("finalResult").style.display = "block";
+  questionFive.style.display = "none";
+  enterInitials.style.display = "block";
+  scoreAlert.style.display = "block";
+}
+
+function wrongAnswer(){ 
+  scoreAlert.textContent = "Incorrect! -25 pts and -10s"
+  scoreAlert.style.color = "red";
+  scoreAlert.style.display = "block";
 }
