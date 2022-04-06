@@ -21,7 +21,8 @@
     <h1>The Ultimate Code Quiz</h1>
     <main>
       <div class="boxCont">
-          
+      
+        <! First Question >
         <div class="answers-box" id="firstQuestion">
           <div class="questions-box" id="questionsBox">Which of the following variable is everywhere in your JavaScript code?</div>
         <button class="answerBtn" id="btn1" onclick="correctAnswer()">global variable</button>
@@ -30,6 +31,7 @@
           <button class="answerBtn" id="wrongbutton" onclick="wrongAnswer()">None of the above</button>
         </div>
 
+        <! Second Question >
           <div class="answers-box" id="secondQuestion">
             <div class="questions-box" id="questionsBox">How to write an if statement in JavaScript?</div>
           <button class="answerBtn" id="wrongbutton" onclick="wrongAnswer()">if i === 4</button>
@@ -38,6 +40,7 @@
             <button class="answerBtn" id="wrongbutton" onclick="wrongAnswer()">if [i === 5]</button>
           </div>
 
+          <! Third Question >
           <div class="answers-box" id="thirdQuestion">
             <div class="questions-box" id="questionsBox">Inside which HTML element do we put the JavaScript?</div>
             <button class="answerBtn" id="wrongbutton" onclick="wrongAnswer()">"Button"</button>
@@ -46,6 +49,7 @@
             <button class="answerBtn" id="wrongbutton" onclick="wrongAnswer()">"Html"</button>
           </div>
 
+          <! Fourth Question >
           <div class="answers-box" id="fourthQuestion">
             <div class="questions-box" id="questionsBox">How do you write 'Hello World' in alert box?</div>
             <button class="answerBtn" id="wrongbutton" onclick="wrongAnswer()">click ('Hello World');</button>
@@ -54,6 +58,7 @@
             <button class="answerBtn" id="wrongbutton" onclick="wrongAnswer()">None of the above</button>
           </div>
           
+          <! Fifth Question >
           <div class="answers-box" id="fifthQuestion">
             <div class="questions-box" id="questionsBox">When was JavaScript created?</div>
             <button class="answerBtn" id="wrongbutton" onclick="wrongAnswer()">1987</button>
@@ -62,17 +67,20 @@
             <button class="answerBtn" id="btn12" onclick="fifthcorrectAnswer()">1995</button>
           </div>
 
+          <! Final Score >
           <div class="scores-box" id="finalResult"> 
-             <h3>Thanks for Playing!</h3>
-            <p> Your Final Score is: <span id="finalscore">100</span> out of 100!</p>
-            <p> Congrats!</p>
-            <form class="submit-box" id="finalInitials" action=""> 
-                <label for="inputInitials">Enter your Initials</label>
-                <input type="text" class="finalscore" id="guestInitials" value = "" >
-                <br><br>
-                <input type="submit" value="Submit">
-            </form>
-          </div>
+            <h3>Thanks for Playing!</h3>
+           <p> Your Final Score is: <span id="finalscore">100</span> out of 100!</p>
+           <p> Congrats!</p>
+           <form class="submit-box" id="finalInitials" action=""> 
+               <label for="inputInitials">Enter your Initials</label>
+               <input type="text" class="finalscore" id="guestInitials" value = "" >
+               <br><br>
+               <input type="submit" value="Submit">
+           </form>
+         </div>
+
+          <! Start Button >
         <div class="commandsBtn">
           <button class="startBtn" id="startHide"> START </button>
           <div class="hide"> Try to answer the following code-related questions within the time limit. Keep in mind
@@ -82,8 +90,11 @@
     </main>
 
     <footer>
-      <h4 id="scoreAlert"></h4>
+    
+      <! Restart Button >
+      <h5 id="scoreAlert"></h5>
       <button  class= restartGameBtn id="restartBtn" onclick="resetGame()"> RESTART </button>
+    
     </footer>
 
     <script src="./Assets/script.js"></script>

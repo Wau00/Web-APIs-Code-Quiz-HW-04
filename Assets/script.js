@@ -4,6 +4,7 @@ var finalScore;
 
 let scoreAlert = document.getElementById("scoreAlert")
 
+// JavaScript Trivia Selectors //
 let questionOne = document.getElementById("firstQuestion");
 let questionTwo = document.getElementById("secondQuestion");
 let questionThree = document.getElementById("thirdQuestion");
@@ -11,9 +12,12 @@ let questionFour = document.getElementById("fourthQuestion");
 let questionFive = document.getElementById("fifthQuestion");
 let enterInitials = document.getElementById("finalResult");
 
+
+
+// Start the Game //
+
 const start = document.getElementById("startHide");
 start.addEventListener("click", startGame);
-
 function startGame() {
   btnTimer = 60;
   finalScore = 100;
@@ -21,11 +25,13 @@ function startGame() {
   startTimer();
   }
 
+// Restart the Game //
+
 function resetGame (){
   window.location.reload();
 }
-  
- 
+   
+// Start Timer //
 
 function startTimer() {
   timer = setInterval(function () {
@@ -41,21 +47,26 @@ function startTimer() {
   }, 1000);
 }
 
+// If the Wrong Answer is Pressed //
 
 function wrongAnswer(){ 
   
+  // Comments for Incorrect Answers
   scoreAlert.textContent = "Incorrect! -25pts and -10s"
   scoreAlert.style.color = "red";
   scoreAlert.style.display = "block";
   
+  // Timer is reduced by 10s seconds //
   btnTimer= btnTimer- 10;
   if (btnTimer < 0){
    clearInterval(timer);
   }
+  // Final Score is reduced by 25pts //
   document.getElementById("finalscore").textContent = finalScore;
   finalScore = finalScore-25;
   console.log (finalScore);
   
+  // Alert when finalScore or timer are equal to zero //
   if (finalScore < 0){
   alert("BUZZZ!!!, your score is negative!");
   window.location.reload()
@@ -65,6 +76,11 @@ function wrongAnswer(){
  }
 
 
+
+// JavaScript Trivia Questions //
+// The function of "none" is to hide the previous question and "block" to show the next question //
+// Only when the correct answer is clicked, the next question will appear // 
+// If the players still choosing the wrong answer they will be penalized until the score or time is equal to zero //
 
 function correctAnswer(){
     questionOne.style.display = "none";
@@ -120,6 +136,10 @@ function fifthcorrectAnswer (){
   finalScore= finalScore +2;
   console.log (finalScore);
 }
+
+
+
+
 
 
 
