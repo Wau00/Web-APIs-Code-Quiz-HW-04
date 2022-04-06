@@ -183,3 +183,25 @@ h4{
 h4{
   display: none;
 }
+
+/* Restart Button */
+
+.restartGameBtn{
+  display: flex;
+  color: #e3e3e3;
+  background-color: #444444;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-top: 15px;
+  margin-left: 46%;
+  font-weight: 400;
+  padding: 10px 10px;
+  opacity: 0.69;
+  transition: transform 450ms;
+
+}
+
+.restartGameBtn:hover{
+  opacity: 1;
+  transform: translateY(-5px);
+}

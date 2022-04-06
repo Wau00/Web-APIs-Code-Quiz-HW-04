@@ -21,7 +21,9 @@ function startGame() {
   startTimer();
   }
 
-
+function resetGame (){
+  window.location.reload();
+}
   
  
 
@@ -53,8 +55,16 @@ function wrongAnswer(){
   document.getElementById("finalscore").textContent = finalScore;
   finalScore = finalScore-25;
   console.log (finalScore);
+  
+  if (finalScore < 0){
+  alert("BUZZZ!!!, your score is negative!");
+  window.location.reload()
+  } else if(btnTimer < 2){
+    alert("BUZZZ!!!, you ran out of time!");
+  }
+ }
 
-}
+
 
 function correctAnswer(){
     questionOne.style.display = "none";
@@ -70,7 +80,7 @@ function secondcorrectAnswer (){
 questionTwo.style.display = "none";
 questionThree.style.display = "block";
 scoreAlert.style.display = "block";
-    scoreAlert.textContent = "Correct! +5pts and +5s"
+    scoreAlert.textContent = "Excellent! +5pts and +5s"
     scoreAlert.style.color = "green";
     btnTimer= btnTimer+5;
     finalScore= finalScore +5;
@@ -81,7 +91,7 @@ function thirdcorrectAnswer (){
   questionThree.style.display = "none";
   questionFour.style.display = "block";
   scoreAlert.style.display = "block";
-  scoreAlert.textContent = "Correct! +5pts + 5s"
+  scoreAlert.textContent = "Outstanding! +5pts + 5s"
   scoreAlert.style.color = "green";
   btnTimer= btnTimer+5;
   finalScore= finalScore +5;
@@ -92,10 +102,10 @@ function fourthcorrectAnswer (){
   questionFour.style.display = "none";
   questionFive.style.display = "block";
   scoreAlert.style.display = "block";
-  scoreAlert.textContent = "Correct! +5pts + 5s"
+  scoreAlert.textContent = "Exquisite! +3pts + 5s"
   scoreAlert.style.color = "green";
   btnTimer= btnTimer+5;
-  finalScore= finalScore +5;
+  finalScore= finalScore +3;
   console.log (finalScore);
 }
 
@@ -103,10 +113,13 @@ function fifthcorrectAnswer (){
   questionFive.style.display = "none";
   enterInitials.style.display = "block";
   scoreAlert.style.display = "block";
-  scoreAlert.textContent = "Correct! +5pts + 5s"
+  scoreAlert.textContent = "Outstanding! +2pts + 5s"
   scoreAlert.style.color = "green";
   scoreAlert.style.display = "none";
   btnTimer= btnTimer+5;
-  finalScore= finalScore +5;
+  finalScore= finalScore +2;
   console.log (finalScore);
 }
+
+
+
